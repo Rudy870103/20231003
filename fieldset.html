@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Family</title>
     <style>
-        .container{
+        .container {
             width: 500px;
             margin: auto;
             padding-top: 100px;
             padding-bottom: 100px;
         }
-        fieldset{
+
+        fieldset {
             padding-top: 20px;
-            border: 5px solid rgb(138, 227, 183);
-            background: linear-gradient(45deg,rgb(185, 225, 255),rgb(211, 254, 211));
+            border: 5px dotted rgb(138, 227, 183);
+            border-radius: 10px;
+            background: linear-gradient(45deg, rgb(185, 225, 255), rgb(211, 254, 211));
         }
-        legend{
+
+        legend {
             font-size: 30px;
             font-weight: bold;
             color: rgb(219, 89, 33);
-            -webkit-text-stroke: 
+        }
+        .form{
+            padding-left: 40px;
         }
     </style>
 </head>
@@ -33,46 +38,51 @@
                 <legend>
                     2023-10-03 Learn about
                 </legend>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="姓甚名誰"><br><br>
-                <label for="phone">Phone:</label>
-                <input type="text" name="phone" id="phone" placeholder="不會亂打"><br><br>
-                <label for="checkbox2">密碼:</label>
-                <input type="password" name="password" id="password" placeholder="別忘記">
-                <br><br>
-                <label for="number">數字:</label>
-                <input type="number" name="number" id="number" value="1" placeholder="至少一個"><br><br>
-                <label for="date">生日:</label>
-                <input type="date" name="date" id="date" placeholder="要滿18"><br><br>
-                <label for="row">下拉式選單:</label>
-                <select name="row" id="row">
-                    <option value="s">s1</option>
-                    <option value="s">s2</option>
-                    <option value="s">s3</option>
-                    <option value="s">s4</option>
-                    <option value="s">s5</option>
-                </select><br>
-                <p>單選:</p>
-                <input type="radio" name="radio" id="radio1">
-                <label for="radio1">選我</label>
-                <input type="radio" name="radio" id="radio2">
-                <label for="radio2">選他</label>
-                <input type="radio" name="radio" id="radio3">
-                <label for="radio3">選你</label>
-                <br>
-                <p>多選:</p>
-                <input type="checkbox" name="checkbox[]" id="checkbox1">
-                <label for="checkbox1">是他</label>
-                <input type="checkbox" name="checkbox[]" id="checkbox2">
-                <label for="checkbox2">是我</label>
-                <input type="checkbox" name="checkbox[]" id="checkbox3">
-                <label for="checkbox3">是你</label>
-                <br><br>
-                reset:
-                <input type="reset" value="重來吧你">
-                <br><br>
-                <label for="textarea">說點什麼:</label><br>
-                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Say Somthing!!!"></textarea>
+                <div class="line"></div>
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="姓甚名誰"><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone" id="phone" placeholder="不會亂call"><br><br>
+                    <label for="password">密碼:</label>
+                    <input type="password" name="password" id="password" placeholder="別忘記">
+                    <br><br>
+                    <label for="number">數字:</label>
+                    <input type="number" name="number" id="number" value="1" placeholder="至少一個"><br><br>
+                    <label for="date">生日:</label>
+                    <input type="date" name="date" id="date" placeholder="要滿18"><br><br>
+                    <label for="row">下拉式選單:</label>
+                    <select name="row" id="row">
+                        <option value="s">s1</option>
+                        <option value="s">s2</option>
+                        <option value="s">s3</option>
+                        <option value="s">s4</option>
+                        <option value="s">s5</option>
+                    </select><br>
+                    <p>單選:</p>
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">選我</label>
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">選他</label>
+                    <input type="radio" name="radio" id="radio3">
+                    <label for="radio3">選你</label>
+                    <br>
+                    <p>多選:</p>
+                    <input type="checkbox" name="checkbox[]" id="checkbox1">
+                    <label for="checkbox1">是他</label>
+                    <input type="checkbox" name="checkbox[]" id="checkbox2">
+                    <label for="checkbox2">是我</label>
+                    <input type="checkbox" name="checkbox[]" id="checkbox3">
+                    <label for="checkbox3">是你</label>
+                    <br><br>
+                    reset:
+                    <input type="reset" value="重來吧你">
+                    <br><br>
+                    <label for="textarea">說點什麼:</label><br>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"
+                        placeholder="Say Somthing!!!"></textarea>
+                </div>
+
             </fieldset>
         </form>
 
